@@ -10,6 +10,6 @@ plusButton.addEventListener("click", () => {
 });
 
 minusButton.addEventListener("click", () => {
-    counterValue += 1;
+    counterValue -= 1;
     document.querySelector("#value").textContent = counterValue;
 });
