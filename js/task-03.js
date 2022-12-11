@@ -19,3 +19,5 @@ const imagesToUl = images
     (image) =>
       `<li class="gallery__item"><img class="gallery__img" src="${image.url}" alt="${image.alt}"/></li>`
   )
+  .join("");
+listOfImages.insertAdjacentHTML("beforeend", imagesToUl);
