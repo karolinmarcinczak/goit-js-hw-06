@@ -8,7 +8,7 @@ const loginData = {};
 function makeSubmit(event) {
     event.preventDefault();
     const {
-        elements: { email, pasword },
+        elements: { email, password },
     } = event.currentTarget;
     if (email.value === "" || password.value === "") {
         return alert("Please fill in all of the fields!");
