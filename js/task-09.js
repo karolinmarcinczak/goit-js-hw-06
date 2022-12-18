@@ -1,13 +1,19 @@
 "use strict";
 
-const body = document.querySelector("body");
-const btnColorChange = document.querySelector("button.change-color");
-const spanColor = document.querySelector("span.color");
+const btnChangeColor = document.querySelector("button.change-color");
 
-btnColorChange.addEventListener("click", getRandomHexColor);
+const body = document.querySelector("body");
+
+const spanHexColorValue = document.querySelector("span.color");
+
+btnChangeColor.addEventListener("click", getRandomHexColor);
 
 function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  let bgColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   body.style.backgroundColor = bgColor;
-  spanColor.textContent = bgColor;
+  spanHexColorValue.textContent = bgColor;
 }
+
+
+
+
