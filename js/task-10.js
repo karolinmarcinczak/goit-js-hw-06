@@ -1,6 +1,6 @@
 "use strict";
 
-const box = document.querySelector("#boxes");
+const box = document.getElementById("boxes");
 const input = document.querySelector("input");
 const createBtn = document.querySelector("[data-create");
 const destroyBtn = domument.querySelector("[data-destroy]")
